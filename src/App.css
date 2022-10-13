@@ -1,0 +1,498 @@
+
+:root{
+  --redbg:#c60000;
+  --text:white;
+  --card:linear-gradient(to bottom, rgb(0, 0, 176) 0%, #4c95dde7 100%);  ;
+  /* --red:#db0000; */
+  --red:#c60000;
+  --reddark:#c60000;
+}
+
+video{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.pro-sidebar > .pro-sidebar-inner {
+  border-radius: 25px;
+}
+
+.homelogo{
+  width: 50%;
+  text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.table{
+  width: 100%;
+  background: var(--card);
+  color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+td{
+  border-spacing:10px ;
+  padding: 15px !important;
+  padding-left: 25px !important;
+}
+
+th{
+  font-size: 14px;
+  font-weight: 50 !important;
+  background: var(--redbg) !important;
+  padding-left: 25px !important;
+  padding-bottom: 15px !important;
+  padding-top: 15px !important;
+}
+
+thead{
+  color: white;
+}
+
+
+.appdiv{
+  display: flex;
+}
+
+.sitelogo{
+  height:20px;
+  width: 20px;
+}
+
+.pagebanner{
+  position: relative;
+  background: var(--redbg);
+  color: white;
+  border-radius: 20px;
+  /* margin-top: 20px; */
+  margin-top: -20px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-top: 25px;
+  padding-left: 20px;
+  height: 95px;
+  font-size: 35px;
+  font-weight: bold;
+}
+/* The animation code */
+@keyframes pagebanner {
+  from {background: red;}
+  to {background: yellow;}
+}
+
+.alert{
+  background: #03297a;
+  border-color: #2d6abf;
+  color: #d0dfe8;
+  margin-top: 25px;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 10px;
+  height: 50px;
+  z-index: 10;
+}
+
+.alertsuccess{
+    background: green;
+    border-color: green;
+    color:white
+}
+
+.text{
+  font-family: sans;
+  color: var(--text);
+}
+
+.bold{
+  font-weight: bolder;
+}
+
+.walletdiv{
+  display: none;
+}
+
+.walletcross{
+  margin-left: 10px;
+  color: red;
+  background: rgb(255, 237, 203);
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.walletcross:hover{
+  color: var(--red);
+  background: white;
+}
+
+.connectionalert{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%, 0);
+  color: white;
+  background: #ae7724;
+  border: #cc8c2b;
+  width: fit-content;
+  height: fit-content;
+}
+
+.walletitem{
+  padding: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 38px;
+  width: 38px;
+  border-radius: 100px;
+}
+
+.walletitem:hover{
+  background: #909eab54;
+}
+
+.navconnectbtn{
+  position: relative;
+  right: 5px;
+  padding: 10px;
+  background: blue;
+  border: solid;
+  border-color: blue;
+  color: white;
+  font-weight: bold;
+  border-radius: 13px;
+  z-index: +10;
+}
+.justify-content-end{
+  position: relative;
+  top: 57px;
+  right: 40px;
+  z-index: +10;
+}
+
+.navconnectbtn:hover{
+  background: rgb(77, 77, 255) !important;
+  border-color: white !important;
+}
+
+.vline{
+  display: inline;
+  border: white;
+  border-style: solid;
+  border-width: 0.5px;
+  margin-right: 15px;
+}
+
+.sidebardiv {
+  border-radius: 20px !important;
+  height: 100vh;
+  width: fit-content;
+  background: transparent !important;
+}
+
+.pro-sidebar > .pro-sidebar-inner > .pro-sidebar-layout{
+  border-radius: 20px !important;
+  background: var(--redbg) !important;
+}
+
+.pro-sidebar{
+  border-radius: 20px !important;
+  margin-top: 20px;
+  margin-left:20px ;
+}
+
+.sidebarcontent{
+  border-radius: 20px !important;
+  /* border-right: 1px rgb(60, 60, 60) solid; */
+  background: transparent !important;
+}
+
+.sidenavheader{
+  border-radius: 20px !important;
+  background: transparent !important;
+  height: 80px;
+}
+
+.sidenavheadercollapsed{
+  height: 100px;
+}
+
+.menuitem{
+  color: white !important;
+}
+
+.menuitemfocus{
+  border-radius: 12px;
+  /* background: rgb(0, 33, 249) !important; */
+  background: linear-gradient(to bottom, rgb(0, 0, 176) 0%, #4c95dde7 100%);
+  color: white !important;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.menuitem:hover{
+  background: linear-gradient(to bottom, rgb(0, 0, 176) 0%, #4c95dde7 100%);
+  border-radius: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.tablecontainer{
+  margin-top: 0px;
+  background: var(--card);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+
+.sidenavheadertitle{
+  margin-left: 28px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: auto;
+  color: white;
+  font-size: 12px;
+}
+
+.sidenavheadertitleinvisible{
+  display: none;
+}
+
+.sidenavheadericon{
+  padding: 5px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.sidenavheadercollapsebtn{
+  position: absolute;
+  right: 10px;
+  top: 5%;
+  transition: transform 0.5s;
+}
+
+.sidenavheadercollapsebtncollapsed{
+  position: absolute;
+  left: 29px;
+  top: 75px;
+  transition: transform 1s;
+}
+
+.sidenavheadercollapse:hover{
+  color: rgb(255, 0, 0);
+}
+
+.sidenavheadercollapserotate{
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+.sidenavfooter{
+  font-family:jumper;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.outline{
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(230, 230, 230);
+}
+
+.homediv{
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+  overflow: scroll;
+}
+
+.calculatediv{
+  width: 100%;
+}
+
+.calculatorinput{
+  border: 0;
+  width: 85%;
+  border-radius: 5px;
+  background: transparent;
+  border-bottom: white 3px solid;
+  color: white;
+}
+
+.calculatechart{
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.calculatorinput:focus{
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.cardcontainer{
+  display: inline;
+}
+
+.statschart{
+  width: 120px;
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+.statscard{
+  margin-top: 10px;
+  background: linear-gradient(to bottom, rgb(0, 0, 176) 0%, #4c95dde7 100%);
+  border-radius: 15px;
+  padding: 25px;
+  border-top: rgb(255, 255, 255) solid 2px;
+  height: 110px;
+}
+
+.homecard{
+  background: var(--card);
+  border-radius: 15px;
+  border: 0;
+  border-bottom: var(--red) solid 5px;
+  height: 190px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.homecardtextcontainer{
+  color: white;
+  font-weight:900;
+  font-size: large;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: var(--red) solid 5px;
+  padding: 15px;
+  /* background:linear-gradient(to bottom, maroon 0%, rgba(255, 39, 39, 0.933) 100%); */
+    background:#c60000;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;  
+}
+
+.graphcontainer{
+  text-align: center;
+  background: rgb(62, 65, 67);
+}
+
+.graph{
+  display: inline-block;
+}
+
+.hometoggleicon{
+  display: none;
+  background: transparent;
+  margin-left: 15px;
+  z-index: 1000;
+  /* margin: 15px; */
+}
+
+.toggle:hover{
+  background: rgb(68, 68, 68);
+}
+
+@media (max-width: 992px){
+  .table{
+    margin-top: 0px;
+  }
+  .tablecontainer{
+    margin-top: 20px;
+    overflow-x: scroll;
+  }
+  .navconnectbtn{
+    position: relative;
+    top: 5px !important;
+    right: 5%;
+    padding: 10px;
+    background: blue;
+    border: solid;
+    border-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 13px;
+    margin-bottom: 5px;
+  }
+
+  .justify-content-end{
+    position: relative;
+    top: 0px;
+    right: 30%;
+  }
+
+  .calculatechart{
+    padding: 0;
+  }
+  .hometoggleicon{
+    display: inline;
+  }
+  .pagebanner{
+    position: relative;
+    margin-top: 0px;
+    font-size: medium;
+    height: 95px;
+  }
+
+  /* .sidebardiv{
+    height: 80px !important;
+  } */
+  .homecontainer{
+    width: 100%;
+  }
+  .statscontainer{
+    margin-left: -25px;
+  }
+  .homediv{
+    padding-top: 10px;
+  }
+  .pro-sidebar{
+    margin-top: 20px;
+    margin-left: -20px ;
+  }
+  video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -100;
+  }
+  .bannerIce{
+    width: 60% !important;
+    top: -13px !important;
+}
+}
+
+@font-face {
+  font-family: jumper;
+  src: url('./assets/fonts/font/JumperPERSONALUSEONLY-Light.ttf');
+}
+
+@font-face {
+  font-family: sans;
+  src: url('./assets/fonts/font/PublicSans-VariableFont_wght.ttf');
+}
