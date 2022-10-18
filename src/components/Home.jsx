@@ -12,10 +12,7 @@ import Logo from './Logo';
 import vid from '../assets/images/vid.mp4';
 import mainlogo from "../assets/images/mainlogo.png";
 import bannerIce from "../assets/images/snow/ice 2.png";
-import statsIce1 from "../assets/images/snow/ice 2.png";
-import statsIce2 from "../assets/images/snow/ice 1.png";
-import statsIce3 from "../assets/images/snow/ice 3.png";
-
+import axios from 'axios';
 
 const Home = () => {
     const [provider,setProvider] = useState(null)
@@ -29,6 +26,11 @@ const Home = () => {
         setProvider(provider);
         setAddress(address);
     }
+    
+    function axio(){
+       console.log(axios.get("https://api.pancakeswap.info/api/v2/tokens/0x14940169E2Db1595CDD3CACd30DECC5bbB4d9f19"));
+    }
+    axio();
 
     return(
         <div className="homediv">

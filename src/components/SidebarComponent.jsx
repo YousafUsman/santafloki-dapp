@@ -16,6 +16,8 @@ import {IoGameControllerOutline} from 'react-icons/io5'
 import { useEffect } from 'react'
 import Logo from './Logo'
 import {RiAppsFill, RiCoinsLine} from 'react-icons/ri'
+import {FaFacebook,FaDiscord,FaTelegram} from "react-icons/fa";
+import {AiFillInstagram,AiFillTwitterCircle} from "react-icons/ai";
 
 const SidebarComponent = () => {
     const [toggle,setToggle] = useContext(Context)
@@ -74,18 +76,7 @@ const SidebarComponent = () => {
                 element.classList.toggle('menuitemfocus')
              }
         }
-        else if(url.includes('m2e')){
-            element = document.getElementById('m2ebtn')
-            if(!element.classList.contains('menuitemfocus')){
-                element.classList.toggle('menuitemfocus')
-             }
-        }
-        else if(url.includes('app')){
-            element = document.getElementById('m2eappbtn')
-            if(!element.classList.contains('menuitemfocus')){
-                element.classList.toggle('menuitemfocus')
-             }
-        }
+        
         else{
             element = document.getElementById('homebtn')
             if(!element.classList.contains('menuitemfocus')){
@@ -136,8 +127,36 @@ const SidebarComponent = () => {
                 <BsCircle onClick={onCollapse} id="collapsetoggle">
                 </BsCircle>
                 </IconContext.Provider>
-}                   
+                }                   
             </div>
+
+                    {!collapse?
+                         <div className='socialDiv'>
+
+                            <a href='https://twitter.com/Santa_Floki' target="_blank">
+                            <AiFillTwitterCircle size={30} style={{color:"white"}} />
+                            </a>
+
+                            <a href='https://discord.com/invite/DngYuM7pZ4' target="_blank">
+                            <FaDiscord size={30}  style={{marginLeft:"12px" , color:"white"}} />
+                            </a>
+
+                            <a href='https://t.me/Santa_Floki' target="_blank">
+                            <FaTelegram size={30}  style={{marginLeft:"12px" , color:"white"}} />
+                            </a>
+
+                            <a href='https://www.instagram.com/santaflokiofficial/' target="_blank">
+                            <AiFillInstagram size={30}  style={{marginLeft:"12px" , color:"white"}} />
+                            </a>
+
+                            <a href='https://www.facebook.com/SantaFloki/' target="_blank">
+                            <FaFacebook size={30} style={{marginLeft:"12px" , color:"white"}} />
+                            </a>
+
+                          </div>
+                    :
+                    ""}
+
             <SidebarContent className='sidebarcontent'>
             <Menu>
                 <div className='sidenavheadertitle text'>
@@ -192,8 +211,8 @@ const SidebarComponent = () => {
                         <BsCoin/>
                     </IconContext.Provider>
                 }>
-                    BTC & ETH Rewards
-                    <NavLink to='/reward' onClick={()=>{
+                    Documents
+                    <NavLink to='/documents' onClick={()=>{
                         setReload(!reload)
                     }}></NavLink>
                 </MenuItem>
@@ -218,26 +237,7 @@ const SidebarComponent = () => {
                         setReload(!reload)
                     }} to='/nft'></NavLink>
                 </MenuItem>
-                <MenuItem id='m2ebtn' className="menuitem" icon={
-                    <IconContext.Provider value={{size:"20px"}}>
-                        <IoGameControllerOutline/>
-                    </IconContext.Provider>
-                }>
-                NFTs || Move-2-Earn
-                <NavLink onClick={()=>{
-                        setReload(!reload)
-                    }} to='/m2e'></NavLink>
-                </MenuItem>
-                <MenuItem id='m2eappbtn' className="menuitem" icon={
-                    <IconContext.Provider value={{size:"20px"}}>
-                        <RiAppsFill/>
-                    </IconContext.Provider>
-                }>
-                Move-2-Earn App
-                <NavLink onClick={()=>{
-                        setReload(!reload)
-                    }} to='/app'></NavLink>
-                </MenuItem>
+            
             </Menu>
             </SidebarContent>
         </ProSidebar>

@@ -9,7 +9,7 @@
 }
 
 video{
-   width: 100vw;
+  width: 100vw;
     height: 100vh;
     object-fit: cover;
     z-index: -100;
@@ -374,6 +374,15 @@ input::-webkit-inner-spin-button {
   height: 110px;
 }
 
+.statscard1{
+  margin-top: 50px;
+  background: linear-gradient(to bottom, rgb(0, 0, 176) 0%, #4c95dde7 100%);
+  border-radius: 15px;
+  padding: 25px;
+  border-top: rgb(255, 255, 255) solid 2px;
+  height: 110px;
+}
+
 .homecard{
   background: var(--card);
   border-radius: 15px;
@@ -418,6 +427,32 @@ input::-webkit-inner-spin-button {
 
 .toggle:hover{
   background: rgb(68, 68, 68);
+}
+
+.docs{
+  display:inline-block;
+  justify-content: center;
+  justify-items: center;
+  margin: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.doc1:hover{
+  width: 700px;
+  filter:brightness(150%);
+  filter: blur(3px);
+  cursor: pointer;
+}
+.doc2:hover{
+  width: 750px;
+  filter:brightness(120%);
+  cursor: pointer;
+}
+
+.socialDiv{
+  margin-top: 15px;
+  margin-left: 30px;
+  cursor: pointer;
 }
 
 @media (max-width: 992px){
@@ -487,6 +522,24 @@ input::-webkit-inner-spin-button {
     width: 60% !important;
     top: -13px !important;
 }
+.statscard1{
+  margin-top: 20px;
+  background: linear-gradient(to bottom, rgb(0, 0, 176) 0%, #4c95dde7 100%);
+  border-radius: 15px;
+  padding: 25px;
+  border-top: rgb(255, 255, 255) solid 2px;
+  height: 110px;
+}
+}
+
+.bgimg{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -100;
+position: fixed;
+top: 0;
+left: 0;
 }
 
 @font-face {

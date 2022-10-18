@@ -9,9 +9,9 @@ import Statistics from './components/Statistics';
 import {HashRouter, Route,Routes} from 'react-router-dom'
 import { useState,createContext } from 'react';
 import Articles from './components/Articles';
-import M2e from './components/M2e';
 import NFT from './components/NFT';
-
+import Documents from './components/Documents';
+import Staking from './components/Staking';
 
 export const Context = createContext(null)
 
@@ -21,7 +21,7 @@ function App() {
   const [address,setAddress] = useState('')
   return (
     <div className='appdiv'>
-        
+
       <HashRouter>
         <Context.Provider value={[toggle,setToggle,connected,setConnected,address,setAddress]}>
       <SidebarComponent/>
@@ -42,8 +42,9 @@ function App() {
         element={<Statistics/>}
         />
         <Route exact path='/articles' element={<Articles></Articles>}/>
-        <Route exact path='/m2e' element={<M2e></M2e>}/>
         <Route exact path='/nft' element={<NFT></NFT>}/>
+        <Route exact path='staking' element={<Staking></Staking>}/>
+        <Route exact path='/documents' element={<Documents></Documents>}/>
         </Routes>
         </Context.Provider>
       </HashRouter>

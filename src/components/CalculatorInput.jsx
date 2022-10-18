@@ -11,7 +11,7 @@ import statsIce5 from "../assets/images/snow/ice 3.png";
 
 
 const CalculatorInput = () => {
-    const [holdingText,setHoldingText] = useState('10,000 PALS');
+    const [holdingText,setHoldingText] = useState('10,000 HOHOHO');
     const [tradingText,setTradingText] = useState('$88.51 USD');
     const [tokenText,setTokenText] = useState('$0.0002 USD');
     const rewardPercent = 0.04;
@@ -86,7 +86,7 @@ const CalculatorInput = () => {
         var element = event.target
         //preprocess
         value = value.replaceAll(',','')
-        value = value.replace(' PALS','')
+        value = value.replace(' HOHOHO','')
         //integer check
         var val=parseInt(value)
         setHolding(val)
@@ -96,7 +96,7 @@ const CalculatorInput = () => {
         }
         else{
             length = val.toLocaleString().length
-            setHoldingText(val.toLocaleString()+' PALS')
+            setHoldingText(val.toLocaleString()+' HOHOHO')
         }
         setTimeout((length)=>{
             element.setSelectionRange(length,length)
@@ -164,7 +164,7 @@ const CalculatorInput = () => {
                     <Card className="statscard text">
                     <img className='statsIce4' src={statsIce5}/>
                         <Card.Title style={{fontSize:"16px"}}>
-                            $PALS Holdings
+                            $HOHOHO Holdings
                         </Card.Title>
                         <Card.Text className="bold">
                             <Logo marginRight={7} size={30}/>

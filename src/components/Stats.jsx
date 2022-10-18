@@ -35,7 +35,7 @@ const Stats = () => {
                             <IconContext.Provider value={{size:"25px"}}>
                             <IoPricetagOutline style={{marginRight:"10px"}}/>
                             </IconContext.Provider>
-                             $0.000015
+                             $0.000063
                         </Card.Text>
                         <Chart className='statschart' width='100' type='area' options={option}
                             series={[{name:'series-1',data:[30,40,50,20,60,2]}]}/>
