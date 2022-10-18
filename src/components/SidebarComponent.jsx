@@ -58,7 +58,7 @@ const SidebarComponent = () => {
                 element.classList.toggle('menuitemfocus')
              }
         }
-        else if(url.includes('reward')){
+        else if(url.includes('documents')){
             element = document.getElementById('rewardbtn')
             if(!element.classList.contains('menuitemfocus')){
                 element.classList.toggle('menuitemfocus')
